@@ -2,7 +2,7 @@ document.querySelector('#calculate').addEventListener('click', () => {
     const dd = document.querySelector('#dd').value
     const mm = document.querySelector('#mm').value
     const yy = document.querySelector('#yy').value
-
+    console.log(dd)
     const dob = new Date(yy, mm, dd)
     const today = new Date()
     const age = today - dob
@@ -14,4 +14,4 @@ document.querySelector('#calculate').addEventListener('click', () => {
     document.querySelector('#days').textContent = Math.floor(days)
 })
 
-
+console.log('dgtrh')
