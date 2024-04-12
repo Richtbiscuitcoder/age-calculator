@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
@@ -14,20 +15,19 @@
                 <form>
                     <div class="form-container">
                         <div class="input">
-                            <label for="day">Day</label>
-                            <input class="day" type="number" id="dd" placeholder="DD" required="required" minlength="2" maxlength="2">
+                            <label for="day" class="block">Day</label>
+                            <input type="text" id="dd" placeholder="DD" required="required" minlength="2" maxlength="2">
                         </div>
                         <div class="form">
                             <div class="input">
-                                <label for="month">Month</label>
-                                <input class="month" type="number" id="mm" placeholder="MM" required="required" minlength="2" maxlength="2">
-                        
+                                <label for="month" class="block">Month</label>
+                                <input  type="text" id="mm" placeholder="MM" required="required" minlength="2" maxlength="2">
                             </div>
                         </div>
                         <div class="form">
                             <div class="input">
-                                <label for="year">Year</label>
-                                <input class="year" type="number" id="yy" placeholder="YYYY" required="required" minlength="4" maxlength="4">
+                                <label for="year" class="block">Year</label>
+                                <input type="text" id="yy" placeholder="YYYY" required="required" minlength="4" maxlength="4">
                             </div>
                         </div>
                     </div>
@@ -39,9 +39,9 @@
                         </div>
                 </form>
                 <div class="output">
-                    <h1><span id="YY">--</span>years</h1>
-                    <h1><span id="MM">--</span>months</h1>
-                    <h1><span id="DD">--</span>days</h1>
+                    <p><span id="years">--</span>years</p>
+                    <p><span id="months">--</span>months</p>
+                    <p><span id="years">--</span>days</p>
                 </div>
              </div>
         </div>
